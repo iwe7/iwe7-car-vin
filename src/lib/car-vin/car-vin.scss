@@ -1,0 +1,43 @@
+:host {
+  display: block;
+  position: relative;
+}
+
+.car-vin-input {
+  height: 45px;
+  line-height: 45px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  background: #fff;
+  align-items: center;
+  position: relative;
+  padding: 0 10px;
+  padding-right: 30px;
+  .car-vin-input-tip {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 30px;
+    text-align: center;
+  }
+  span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+    position: relative;
+    &:after {
+      background: #efefef;
+      content: " ";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      width: 1px;
+      transform: scaleX(.5);
+    }
+  }
+}
